@@ -38,22 +38,44 @@
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     background-color: #444444;
     gap: 10px;
     padding: 15px;
+    align-items: stretch;
+
 
     .main-item {
         padding: 15px;
         background-color: #626262;
         border-radius: 25px;
         height: fit-content;
+        text-wrap: wrap;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         p {
             font-size: 20px;
-        };
+        }
+        h1 {
+            margin-top: -10px;
+            margin-bottom: -10px;
+            text-shadow: 
+        }
     }
 }
 
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 auto;
+
+    .projects-entry {
+        padding-left: 8px;
+        background-color: #555555;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
 .contact-footer {
     position: relative;
     margin-top: 5px;
