@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+<<<<<<< HEAD
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>benrzasa.com</title>
@@ -32,24 +33,144 @@
                     <img 
                         src="src/images/ztt-value-chart.png" 
                         alt="screenshot of ZTT's main value chart page"
+=======
+        <title>benrzasa.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml" href="/webdev-final-benrzasa/vite.svg" />        
+        <link rel="stylesheet" crossorigin href="/webdev-final-benrzasa/assets/index-_YUpKE9x.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="src/carousel.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#about">About Me</a></li>
+                <li><a class="dropdown-item" href="#experience">Previous Work</a></li>
+                <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                <li><a class="dropdown-item" href="#contact">Contact Form</a></li>
+            </ul>
+        </div>
+        <div class="main-container">
+            <div class="main-item about-section" id="about">
+                <h1>About Me</h1>
+                <p>Hey! I'm Ben Rzasa, a PSU Computer Science undergrad, mediocre programmer, and enjoyer of video games. This website showcases some basic web development skills I've learned in the past year, as well as my work experience, projects I'm especially proud of, and a way to contact me.  I always enjoy learning new topics related to CS, new languages, frameworks, operating systems, whatever gets my interest at a certain moment. May not have professional experience in any CS industry or be set up for a good internships like some of my peers, but I attempt to make up for it with genuine interest and willingness to try new projects.</p>
+                <img src="src/images/car.png"/ width="300px" height="300px">
+            </div>
+            <div class="main-item experience-section" id="experience">
+                <h1>Previous Work / CS Skills</h1>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Web development - been working on a community tool for a game I play, used by a majority of the active players now, since March 2025, with over 500 documented commits and deploys from github: "Zenith's Trading Tool," seen in the Projects section on this page. Experience creating multi-page static sites, less so with backend operations, although I have done some with the very basics.</li>
+                    <li>Languages (In order of most to least experience): JavaScript, C++, C, HTML, CSS, NASM, a smattering of Lua</li>
+                    <li>Proficient in VIM/VI/NeoVim text editors - enables quick editing of code and construction of projects</li>
+                    <li>Proficient in Linux usage, navigation, commands, and basic scripting - even took the dive and dual booted Arch on my laptop's 2nd SSD! That was quite the endeavor...</li>
+                </ul>
+                <h3>Work (Ordered from most to least recent)</h3>
+                <ul>
+                    <li>Unfortunately, haven't had much luck looking for or applying to CS internships. Attempting to branch out and focus more specifically on Web Development (Primarily frontend and UI design, as I genuinely really enjoy tinkering with website UI and functionality).</li>
+                    <li>Currently employed at the PSU Library - Circ desk, stacks, assistance, etc.</li>
+                    <li>Summer 2024 - Worked at the Johnson County Library in Buffalo, Wyoming. Ran the front desk, shelved, helped patrons with technical and other library questions, took calls, and created re-usable media for library promotional material.</li>
+                    <li>Summer 2023 - Employed in Sheridan County School District #2's groundskeeping team. Operated heavy mowing equipment, on a 6am-2pm shift. Would not recommend, especially being a 35 minute drive away at the time.</li>
+                </ul>
+            </div>
+            <div class="main-item projects-section" id="projects">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h1>MAKE PROJECT ENTRIES APPEAR IN A CAROUSEL FORMAT BASED ON, BUT NOT COPIED FROM https://freefrontend.com/css-carousels/</h1>
+                <h1>Projects I'm Most Proud Of (so far...)</h1>
+                <div class="projects-entry">
+                    <p><strong>"Zenith's Trading Tool" (ZTT)</strong><br>My largest and most involved project to date, with over 500 commits and 800 deployments to github-pages. Website side project programmed in JavaScript, HTML, and CSS, using the React framework for functionality, and Vite to package and deploy the site. Been under development since March 2025, and continues to be extremely fun to work on. Allows users to copy their inventory CSV string from the game "Celestial Caverns", load it in, and view and modify various statistics. Includes a trade tool, value chart, navigation bar, fully custom UI, background image/gif storing and optimization via a basic database, and much more. Even recently implemented data fetching from a wiki page via their API, after learning about it in this class! Very proud of this project overall, it's even being actively used by a majority of active players.</p>
+                    <p><strong>Link: </strong><a href="https://benrzasa.github.io/zenithstradingtool">Click here to view deployed site! (github-pages)</a></p>
+                    <img 
+                        src="/webdev-final-benrzasa/assets/ztt-value-chart-B5eQRyOc.png" 
+                        alt="placeholder move to carousel"
+>>>>>>> be32e87641222d1f39ae0f454628405ccf1b978a
                         width="90%"
                     />
                 </div>
                 <div class="projects-entry">
                     <p><strong>"Sieve of Eratosthenes"</strong><br>Prime number generator programmed in Assembly. Takes user input, generates prime numbers up to an upper bound of 2 billion. Includes a script to test the runtime of the program with given text files.</p>
                     <p><strong>Link: </strong><a href="https://github.com/BenRzasa/asm_sieve_eratosthenes">Click here to view Github repo</a></p>
+<<<<<<< HEAD
                 </div>
                 <div class="projects-entry">
                     <p><strong>Arcane Duel</strong><br>C++ terminal-based two player card game utilizing templates for a doubly linked list deck data structure, populated by multiple types of cards. Includes basic health, buff, and damage functionality, as well as some basic ASCII art.</p>
                     <p><strong>Link: </strong><a href="https://github.com/BenRzasa/arcane_duel_game">Click here to view Github repo</a></p>
+=======
+                    <img 
+                        src="/webdev-final-benrzasa/assets/ztt-value-chart-B5eQRyOc.png" 
+                        alt="placeholder move to carousel"
+                        width="90%"
+                    />
+                </div>
+                <div class="projects-entry">
+                    <p><strong>Arcane Duel</strong><br>C++ terminal-based two player card game utilizing templates for a doubly linked list deck data structure, populated by multiple types of cards. Includes basic health, buff, and damage functionality, as well as some cool ASCII art.</p>
+                    <p><strong>Link: </strong><a href="https://github.com/BenRzasa/arcane_duel_game">Click here to view Github repo</a></p>
+                    <img 
+                        src="/webdev-final-benrzasa/assets/ztt-value-chart-B5eQRyOc.png" 
+                        alt="placeholder move to carousel"
+                        width="90%"
+                    />
+>>>>>>> be32e87641222d1f39ae0f454628405ccf1b978a
                 </div>
                 <div class="projects-entry">
                     <p><strong>"Rockem" Client & Server</strong><br>Basic client-server interface written in C, run from two separate areas. Can send files both ways, and has a few other functions such as checking if a file exists on the client or server, or simply reading the data directly.</p>
                     <p><strong>Link: </strong><a href="https://github.com/BenRzasa/rockem_client_server">Click here to view Github repo</a></p>
+<<<<<<< HEAD
+=======
+                    <img 
+                        src="/webdev-final-benrzasa/assets/ztt-value-chart-B5eQRyOc.png" 
+                        alt="placeholder move to carousel"
+                        width="90%"
+                    />
+>>>>>>> be32e87641222d1f39ae0f454628405ccf1b978a
                 </div>
                 <div class="projects-entry">
                     <p><strong>"Arvik" packaging utility</strong><br>C utility program meant to emulate basic features available on UNIX systems in the "ar" utility, and is also 100% compatible with "ar" extraction and compression, and other operations. Groups files together with a very specific header and gaps between them, into a ".arvik" file rather than ".ar". Also works with binary files. This one was fun to work on and test.</p>
                     <p><strong>Link: </strong><a href="https://github.com/BenRzasa/arvik">Click here to view Github repo</a></p>
+<<<<<<< HEAD
                 </div>
             </div>
             <div class="main-item about-section">
@@ -66,6 +187,61 @@
         <div class="contact-footer">
             <div class="contact-item">CONTACT FOOTER</div>
             <div class="contact-item">CONTACT FOOTER</div>
+=======
+                    <img 
+                        src="/webdev-final-benrzasa/assets/ztt-value-chart-B5eQRyOc.png" 
+                        alt="placeholder move to carousel"
+                        width="90%"
+                    />
+                </div>
+            </div>
+
+        </div>
+        <form action="submit" method="POST">
+            <p><span class="required"></span> = Required Field</p>
+    
+            <div class="form-input">
+                <label for="name" class="required">Your Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required aria-required="true">
+            </div>
+    
+            <div class="form-input">
+                <label for="email" class="required">Your Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-required="true">
+            </div>
+    
+            <div class="form-input">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+    
+            <fieldset>
+                <legend class="required">Reason for contact</legend>
+                <div class="form-input">
+                    <input type="radio" id="inquiry" name="reason" value="inquiry" required aria-required="true">
+                    <label for="inquiry">This option does something.</label>
+                </div>
+                <div class="form-input">
+                    <input type="radio" id="support" name="reason" value="support">
+                    <label for="support">Click me! Click me!</label>
+                </div>
+                <div class="form-input">
+                    <input type="radio" id="code" name="reason" value="code">
+                    <label for="billing">Uhhhh, don't click this one.</label>
+                </div>
+            </fieldset>
+    
+            <div class="form-input">
+                <label for="message" class="required">Enter Your Amazing Message!!!</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            </div>
+    
+            <button type="submit">Send Message (this will do nothing realistically, as I have no backend implementation 👍)</button>
+        </form>
+        <div class="contact-footer">
+            <div class="contact-item">Contact me -></div>
+            <div class="contact-item">rzasaben@gmail.com</div>
+>>>>>>> be32e87641222d1f39ae0f454628405ccf1b978a
             <div class="contact-item">CONTACT FOOTER</div>
             <div class="contact-item">CONTACT FOOTER</div>
             <div class="contact-item">CONTACT FOOTER</div>
