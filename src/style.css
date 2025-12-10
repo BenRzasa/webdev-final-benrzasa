@@ -59,7 +59,6 @@ html * {
 
 
 .dropdown {
-    button .btn-secondary .dropdown-toggle
     .dropdown-menu {
         border: 1px solid var(--accent-color);
         border-radius: 0px;

@@ -145,8 +145,6 @@ function makeDraggable(element) {
         // Remove event listeners
         document.removeEventListener('mousemove', drag);
         document.removeEventListener('mouseup', dragEnd);
-        document.removeEventListener('touchmove', dragTouch);
-        document.removeEventListener('touchend', dragEndTouch);
 
         // Reset z-index after a moment
         setTimeout(() => {
@@ -154,9 +152,5 @@ function makeDraggable(element) {
                 element.style.zIndex = '1000';
             }
         }, 300);
-    }
-
-    function dragEndTouch(e) {
-        dragEnd(e);
     }
 }
