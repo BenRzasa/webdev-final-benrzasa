@@ -121,10 +121,13 @@ html * {
     }
 }
 
+img {
+    margin: auto;
+}
+
 .image-box {
+    margin-top: 10px;
     width: 100%;
-    justify-content: center;
-    background-color: red;
 }
 
 form {
