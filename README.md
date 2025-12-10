@@ -1,5 +1,6 @@
 ## Ben Rzasa | Intro to Web Dev Fall 2025 Final | Single-page Professional Site
 ## Link: https://benrzasa.github.io/webdev-final-benrzasa
+## Video Link: https://media.pdx.edu/media/t/1_955lfi84
 
 ## Instructions on how to build and run:
 - Download all files in this repo and place them inside a new directory of your choice. Ideally use `git init` and follow the standard github procedure for setting up a new repository first: https://github.com/new
