@@ -1,6 +1,6 @@
 
 html * {
-    font-family: "Jetbrains Mono" !important;
+    font-family: "Jetbrains Mono";
     /* background-color: #101010 !important; */
 }
 
@@ -18,6 +18,8 @@ html * {
     -moz-osx-font-smoothing: grayscale;
     --accent-color: #32858b;
     --background-color: #101010; 
+
+    /* Found a neat website offering geometric CSS pattern backgrounds! */
     --s: 200px;
     --c1: #191919;
     --c2: #272526;
@@ -37,26 +39,27 @@ html * {
 
 
 .header {
-    h1 { font-size: 50px; font-weight: 500; }
+    h1 { font-size: 35px; }
     display: flex;
     flex-direction: row;
     position: sticky;
     justify-content: space-between;
     padding: 0 auto;
-}
-
-.dropdown {
-    right: 0; top: 10;
-    position: fixed;
 
     button {
+        color: white;
         border-radius: 0px;
         border: 1px solid var(--accent-color);
         font-size: 20px;
-        height: 50%;
+        height: 50px;
+        width: fit-content;
         background-color: var(--background-color) !important;
     }
+}
 
+
+.dropdown {
+    button .btn-secondary .dropdown-toggle
     .dropdown-menu {
         border: 1px solid var(--accent-color);
         border-radius: 0px;
@@ -66,7 +69,6 @@ html * {
     a.dropdown-item {
         color: white;
         font-size: 18px;
-        font-weight: bold;
         background-color: var(--background-color) !important;
     }
 
@@ -83,12 +85,17 @@ html * {
     justify-content: center;
 
     .accordion {
-        border: 2px solid white;
-        border-radius: 0px;
+        border: 1px solid white;
         color: white;
         h2.accordion-header button {
             margin-top: 0px;
             color: var(--accent-color);
+        }
+
+        * {
+            background-color: var(--background-color);
+            margin-top: 0px;
+            border-radius: 0px;
         }
     }
 
@@ -104,8 +111,7 @@ html * {
         background-color: var(--background-color);
         padding: 1rem;
         height: fit-content;
-        max-width: 600px;
-        min-width: 300px;
+        width: 600px;
         text-wrap: wrap;
         box-shadow: rgba(0, 0, 0, 0.9) 0px 19px 38px, rgba(0, 0, 0, 0.6) 0px 15px 12px;
         /* box-shadow: rgba(50, 133, 139, 0.4) -5px 5px, rgba(50, 133, 139, 0.3) -10px 10px, rgba(50, 133, 139, 0.2) -15px 15px, rgba(50, 133, 139, 0.1) -20px 20px, rgba(50, 133, 139, 0.05) -25px 25px; */
@@ -114,4 +120,29 @@ html * {
             font-size: 20px;
         }
     }
+}
+
+.image-box {
+    width: 100%;
+    justify-content: center;
+    background-color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form * {
+    text-wrap: nowrap;
+
+    .required {
+        color: red;
+    }
+
+    input { 
+        width: 300px;
+    }
+
 }
