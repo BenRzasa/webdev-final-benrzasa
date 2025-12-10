@@ -2,24 +2,28 @@
 <html lang="en">
     <head>
         <title>benrzasa.com</title>
-        <link rel="icon" type="image/x-icon" href="/webdev-final-benrzasa/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/webdev-final-benrzasa/assets/favicon-48ls3mqs.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        <!--Custom "nerd font"-->
         <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+        <!--Font awesome icons-->
         <!-- Bootstrap 5 CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="/webdev-final-benrzasa/terminal.css">
-      <link rel="stylesheet" crossorigin href="/webdev-final-benrzasa/assets/index-BUC6jan8.css">
+        <!-- terminal color theme, downloaded from an external website - combined with my own custom css -->
+      <link rel="stylesheet" crossorigin href="/webdev-final-benrzasa/assets/index-DAnazyd2.css">
     </head>
     <body>
         <div id="app">
             <div class="header">
-                <h1>{ benrzasa.com }</h1>
+                <h1>{ <i class="fa fa-id-card"></i> benrzasa.com }</h1>
+                <button id="fancy-mode-toggle" type="button" aria-label="Toggle fancy interactive mode">
+                    <i class="fa fa-hand-pointer"></i> Fancy Mode??
+                </button>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Navigation
+                        Navigation <i class="fa fa-bars"></i>
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#about">About Me</a></li>
@@ -32,13 +36,16 @@
 
             <div class="main-container">
                 <div class="main-item about-section" id="about">
-                    <h1>About Me</h1>
+                    <h1>{ <i class="fa fa-user"></i> About Me }</h1>
                     <blockquote><p>Hey! I'm Ben Rzasa, a PSU Computer Science undergrad, mediocre programmer, and enjoyer of video games. This website showcases some basic web development skills I've learned in the past year, as well as my work experience, projects I'm especially proud of, and a way to contact me.  I always enjoy learning new topics related to CS, new languages, frameworks, operating systems, whatever gets my interest at a certain moment. May not have professional experience in any CS industry or be set up for a good internships like some of my peers, but I attempt to make up for it with genuine interest and willingness to try new projects.</p></blockquote> 
-                    <img src="/webdev-final-benrzasa/assets/car-OBe4yhmj.png" width="300px" height="300px">
+                    <div class="image-box" id="img-box">
+                        <img src="/webdev-final-benrzasa/assets/car-OBe4yhmj.png" width="300px" height="300px">
+                    </div>
+                    
                 </div>
 
                 <div class="main-item experience-section" id="experience">
-                    <h1>CS Skills & Previous Work Experience</h1>
+                    <h1>{ <i class="fa fa-keyboard"></i> CS Skills & Work Experience }</h1>
                     <h3>Skills</h3>
                     <blockquote>
                         <ul>
@@ -51,16 +58,16 @@
                     <h3>Work (Ordered from most to least recent)</h3>
                     <blockquote>
                         <ul>
-                            <li>Unfortunately, haven't had much luck looking for or applying to CS internships. Attempting to branch out and focus more specifically on Web Development (Primarily frontend and UI design, as I genuinely really enjoy tinkering with website UI and functionality).</li>
-                            <li>Currently employed at the PSU Library - Circ desk, stacks, assistance, etc.</li>
-                            <li>Summer 2024 - Worked at the Johnson County Library in Buffalo, Wyoming. Ran the front desk, shelved, helped patrons with technical and other library questions, took calls, and created re-usable media for library promotional material.</li>
-                            <li>Summer 2023 - Employed in Sheridan County School District #2's groundskeeping team. Operated heavy mowing equipment, on a 6am-2pm shift. Would not recommend, especially being a 35 minute drive away at the time.</li>
+                            <li><strong>Goal is:</strong> to get an internship, job offering, or even a freelance position of some sort related to web development. Attempting to branch out and focus more specifically on Web Development (Primarily frontend and UI design, as I genuinely really enjoy tinkering with website UI and functionality).</li>
+                            <li><strong>Currently employed at</strong> the PSU Library - Circ desk, stacks, assistance, etc.</li>
+                            <li><strong>Summer 2024</strong> - Worked at the Johnson County Library in Buffalo, Wyoming. Ran the front desk, shelved, helped patrons with technical and other library questions, took calls, and created re-usable media for library promotional material.</li>
+                            <li><strong>Summer 2023</strong> - Employed in Sheridan County School District #2's groundskeeping team. Operated heavy mowing equipment, on a 6am-2pm shift. Would not recommend, especially being a 35 minute drive away at the time.</li>
                         </ul>
                     </blockquote>
                 </div>
 
                 <div class="main-item projects-section" id="projects">
-                    <h1>Projects I'm Most Proud Of (so far...)</h1>
+                    <h1>{ <i class="fa fa-terminal"></i> Projects I'm Most Proud Of }</h1>
                     <blockquote>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -150,10 +157,12 @@
                     </blockquote>
                 </div>
                 <div class="main-item contact">
-                    <h1>Email: rzasaben@gmail.com</h1>
+                    <h1>{ <i class="fa fa-address-book"></i> Contact Me! }</h1>
                     <blockquote>
-                        <form action="submit" method="POST">
-                            <p><span class="required">*</span> = Required Field</p>
+                        <!--Formspree free version can mimic form submission, since a backend is unavailable due to it being a static gh-pages site-->
+                        <form action="https://formsubmit.co/rzasaben@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission">
+                            <span><span class="required">*</span> = Required Field</span>
                             <div>
                                 <label for="name">Your Name <span class="required">*</span></label>
                                 <input type="text" id="name" name="name" autocomplete="name" required>
@@ -188,12 +197,13 @@
                                 </div>
                             </fieldset>
 
-                            <div>
-                                <label for="message">Enter Your Amazing Message!!! <span class="required">*</span></label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
+                            <label for="message">Enter Your Amazing Message!!! <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
 
                             <button type="submit">Send Message</button>
+
+                             <!-- For screen reader announcements - suggestion I saw online for additional accessibility -->
+                            <div id="formFeedback" role="alert" aria-live="assertive" class="sr-only"></div>
                         </form>
                     </blockquote>
                 </div>
@@ -201,6 +211,7 @@
         </div>
 
         <!-- Bootstrap 5 JS Bundle with Popper -->
+        <script src="src/fancyMode.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
